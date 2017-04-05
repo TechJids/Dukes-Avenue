@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="dukes.css">
+	<link rel="stylesheet" type="text/css" href="">
+	<title>Dukes Avenue</title>
+
+	<style type="text/css">
+
+		
+
+		.header {
+			color: #fff;
+			background: url("dukes-img/dukes4.jpg") center left fixed no-repeat;
+	        background-size: cover;
+	        height: 1210px;
+		}
+
+		.header h1 {
+			margin-top: 250px;
+			font-size: 100px;
+		}
+
+		.header h4 {
+			margin-top: 350px;
+		}
+
+
+
+		.header p {
+			font-size: 18px;
+		}
+
+		.btn {
+			color: #fff;
+			background-color: #3f384f
+		}
+
+
+		.cards {
+			margin-top: 110px;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.cards h2 {
+			margin-bottom: 50px;
+		}
+
+
+
+		.cards h6 {
+			color: red;
+		}
+
+		.cards p {
+			margin-top: 15px;
+		}
+
+
+		#Music {
+			margin-top: 180px
+		}
+
+
+		#stars {
+			margin-top: 180px;
+		}
+
+	   .middle {
+	   	margin-top: 350px;
+	   }
+
+	   /* Overlay CSS */
+
+	   .overlayContainer{
+	   		position: relative;
+	   		width: 100%;
+	   }
+
+	   h2 {
+	   	position: absolute;
+	   	top: 20px;
+	   	left: 0;
+	   	width: 100%
+	   }
+
+	   .class {
+	   	 display: block;
+	   	 width: 100%;
+	   	 height: auto;
+	   }
+
+	   .invisible {
+	   		position: absolute;
+	   		bottom: 0;
+	   		left: 0;
+	   		right: 0;
+	   		background-color: white;
+	   		overflow: hidden;
+	   		width: 0;
+	   		height: 100%;
+	   		transition: .5s ease;
+	   }
+
+	   .overlayContainer:hover .invisible {
+	   		width: 100%
+	   }
+
+	   .text {
+	   	white-space: nowrap;
+	   	color: black;
+	   	font-size: 120px;
+	   	position: absolute;
+	   	overflow: hidden;
+	   	top: 50%;
+	   	left: 50%;
+	   	transform: translate(-50%, -50%);
+	   /*	-ms-transform: translate(-50%, -50%);*/
+	   }
+
+
+	</style>
+
+</head>
+<body>
+	<div class="header text-center">
+	 <div class="container">
+	 	<h1>Dukes Avenue</h1>
+	 	 <p>Where The Music Is Made</p>
+	 	 <h4>Sign up to get the lastest news and music from Dukes Avenue</h4>
+	 	 <form method="post" action="mailto:jawotona@outlook.com" class="form-inline">
+	 	 	<div class="form-group">
+	 	 	<input type="email" class="form-control" value="Your Email" id="email">
+	 	 	</div>
+	 	 	<button type="submit" class="btn btn-default">Submit </button>
+		</form>
+
+	</div> 	
+   </div>
+
+   	<div class="cards">
+   	 <div class="container">
+   	   <h2 class="text-center">Meet The Team</h2>
+   	  <div class="row">
+   	   <div class="col-md-4">
+   	    <img class="img-responsive thumbnail" src="dukes-img/jids.jpg" id="jm">
+   	    <h5>Jack Moses - Songwriter/Singer/Vocal Producer</h5>
+   	    </div>
+   	   <div class="col-md-4">
+   	    <img class="img-responsive thumbnail" src="dukes-img/dutchie.jpg" id="dutch">
+   	    <h5>Dutchie - Producer/Songwriter/Vocal Producer</h5>
+   	    </div>
+   	   <div class="col-md-4">
+   	    <img class="img-responsive thumbnail" src="dukes-img/pbj.jpg" id="pbj">
+   	    <h5>PBJ - Producer/Songwriter/Vocal Producer</h5>
+   	   </div>
+   	  </div>
+
+   	  <h2 id="Music" class="text-center">Hear The Music</h2>
+   	    <div class="row">
+   	     <div class="col-md-4">
+   	      <a href="https://www.youtube.com/watch?v=zazhp3gNVbg" target="_blank"><img class="img-responsive" src="dukes-img/beauty.jpg" alt="beautiful girl image"></a>
+   	      <h6 class="text-center">Click the video to view</h6>
+   	      <p>Beautiful Girl - Written, Vocalled and Produced By Dukes Avenue</p>
+   	     </div> 
+
+   	    <div class="col-md-4">
+   	     <a href="https://www.youtube.com/watch?v=-vcUT-x3LfQ" target="_blank"><img class="img-responsive" src="dukes-img/changes.jpg" alt="Changes video"></a>
+   	     <h6 class="text-center">Click the video to view</h6>
+   	    <p>Dylan Williams - 'Changes' - Co-written and Produced By Dukes Avenue </p>
+   	    </div>
+
+   	    <div class="col-md-4">
+   	     <a href="https://www.youtube.com/watch?v=5e3A-QzHRe0" target="_blank"><img class="img-responsive" src="dukes-img/kids.jpg" alt="kids of the night video"></a>
+   	     <h6 class="text-center">Click the video to view</h6> 
+   	     <p>Blizzard - 'Kids of the Night' - Co-written and Produced By Dukes Avenue </p>
+   	     </div>
+   	     </div> 
+
+   	     <!-- Overlay Attempt -->
+   	     <div class="overlayContainer">
+   	     <h2 id="stars" class="text-center">Some Collabs</h2>
+   	        <img class="img-responsive class" id="tre" src="https://static.wixstatic.com/media/dfc87b_7a1a667f938d4923b1eb2fc3c84edf0f.jpg_srz_857_571_85_22_0.50_1.20_0.00_jpg_srz"  alt="tre jean marie">
+   	        <div class="invisible">
+   	        <div class="text">Tre Jean Marie</div>
+   	        </div>
+   	        </div>
+
+   	        <div class="col-md-3">
+   	         <img class="img-responsive image" src="https://pbs.twimg.com/profile_images/757891088346644480/wSSJ6Lc4.jpg">
+   	         <p>Louise Labelle</p>
+   	         </div>
+
+   	         <div class="col-md-3">
+   	         <img class="img-responsive image" src="https://www.pmtonline.co.uk/yoma_press/wp-content/uploads/2016/03/ed1.jpg" alt="Ed Sheeran">
+   	         <p>Ed Sheeran</p>
+   	         </div>
+
+   	         <div class="col-md-6">
+   	         <img class="img-responsive image" src="https://pbs.twimg.com/profile_images/771010489681899520/b5H0sC3Y.jpg" width="550">
+   	         <p>Sampha</p>
+   	         </div>
+
+   	         <div class="col-md-6">
+   	         <img  class="img-responsive image" src="http://newwavedistrict.co.uk/wp-content/uploads/2017/01/Dylan-Williams-752x440.jpg" alt="Dylan Williams">
+   	         
+   	         <p>Dylan Williams</p>
+   	         </div>
+
+
+   	   </div>      
+   	 </div>
+   	 </div>
+
+   	  <div class="middle">
+   	   <div class="container">
+   	   
+
+
+
+
+
+
+
+   	    </div>
+   	    </div>
+
+   	   	 
+
+
+  
+   	   
+
+</body>
+</html>
